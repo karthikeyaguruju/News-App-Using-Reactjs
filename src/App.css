@@ -1,0 +1,53 @@
+/* Navbar animations */
+.navbar {
+    transition: background-color 0.5s ease;
+  }
+  
+  .navbar:hover {
+    background-color: #333;
+  }
+  
+  /* Card animations */
+  .animate-card {
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .animate-card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Button animations */
+  .animate-button {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .animate-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+  }
+  
+
+   /* Custom CSS for animation */
+   @keyframes slideInUp {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+
+  .footer {
+    background-color: #ffffff;
+    color: #003d51;
+    padding: 20px 0;
+    /* position: fixed; */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    animation: slideInUp 0.5s ease;
+  }
+
+  .footer p {
+    margin-bottom: 0;
+  }
